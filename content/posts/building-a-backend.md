@@ -4,7 +4,7 @@ date: 2022-05-26T18:04:45-03:00
 draft: false
 tags: ["backend", "rust"]
 ---
-In my first blog post, [*Creating a basic on-prem personal blog*](http://localhost:35715/posts/creating-a-blog/), I noted what was the plan on building this website. I talked about how I was going to make everything from scratch, including the look of the page, its backend and a server to host it at home.
+In my first blog post, [*Creating a basic on-prem personal blog*](http://grbenjamin.github.io/posts/creating-a-blog/), I noted what was the plan on building this website. I talked about how I was going to make everything from scratch, including the look of the page, its backend and a server to host it at home.
 
 I thought that building the web server itself would take ages to do. But that was before trying to the the backend. Gosh, I really did think that was going to be super easy.
 
