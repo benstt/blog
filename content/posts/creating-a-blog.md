@@ -1,6 +1,7 @@
 ---
 title: "Creating a basic on-prem personal blog"
 date: 2022-05-22T20:57:06-03:00
+summary: Finding good side projects to build sure is hard, specially for a beginner with not that much of experience. So why don't I start blogging about random stuff I learn?
 draft: false
 tags: ["devops", "project", "backend", "nginx", "django"]
 ---

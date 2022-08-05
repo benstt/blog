@@ -1,6 +1,6 @@
 baseURL: https://grbenjamin.github.io/
 languageCode: en-us
-title: placeholder
+title: fromskratch
 theme: "PaperMod"
 
 buildDrafts: false
@@ -18,6 +18,7 @@ params:
   ShowBreadCrumbs: true # shows ex: home >> posts
   ShowReadingTime: true
   ShowShareButtons: true
+  ShareButtons: ["linkedin", "twitter", "reddit"]
   ShowCodeCopyButtons: true
   comments: true
   showtoc: true
@@ -25,22 +26,26 @@ params:
 
   # 'suggest changes' button
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/grbenjamin/blog/tree/main/content"
     Text: "Suggest changes"
     appendFilePath: true
 
   # home page
   homeInfoParams:
-    Title: "Heya! ʕ•ᴥ•ʔ"
-    Content: This is my blog. Here is where I put random thoughts I have.
-
+    Title: "building things, *fromskratch*."
+    Content: |
+      Heya! My name is Benjamín. I use this blog as a way of documenting everything I learn and build throughout the years,
+      ranging from *[random nerdy stuff]*, to *[EVEN MORE RANDOM NERDY STUFF]*, with a focus on experimenting.
+  
   socialIcons:
       - name: "GitHub"
         url: "https://github.com/grbenjamin"
       - name: "LinkedIn"
         url: "https://www.linkedin.com/in/benjamin-garcia-roques/"
+      - name: "email"
+        url: "mailto:benjamingarciaroques@gmail.com"
       - name: "rss"
-        url: "grbenjamin.github.io/index.xml"
+        url: "https://grbenjamin.github.io/index.xml"
   
   # searching opts
   fuseOpts:
@@ -62,13 +67,13 @@ menu:
       name: snippets
       url: /snippets/ 
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
     - identifier: about
       name: about
       url: /about/ 
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
       weight: 30
     - identifier: search
       name: search

@@ -1,6 +1,7 @@
 ---
 title: "Building a backend for my website"
 date: 2022-05-26T18:04:45-03:00
+summary: A webpage is a bit limited without some server-side handling. You know... like having cool URLs, and probably some other things as well that I don't care. But why don't use it as a learning experience? :)
 draft: false
 tags: ["backend", "rust"]
 ---
@@ -8,7 +9,7 @@ In my first blog post, [*Creating a basic on-prem personal blog*](http://grbenja
 
 I thought that building the web server itself would take ages to do. But that was before trying to the the backend. Gosh, I really did think that was going to be super easy.
 
-Originally, I was going to use [**Django**](https://www.djangoproject.com ) or [**Gin Gonic**](https://gin-gonic.com/) for that, but I googled a bit for other frameworks I could use, to get a broader look. The only framework I've used in the past was [**Spring**](https://spring.io/), so I though I could use it. Not that I loved using it, but I liked how I could simply put an *annotation* above a method to specify the HTTP method used, like in, say *Flask* or *Express.js*. 
+Originally, I was going to use [**Django**](https://www.djangoproject.com ) or [**Gin Gonic**](https://gin-gonic.com/) for that, but I googled a bit for other frameworks I could use, to get a broader look. The only framework I've used in the past was [**Spring**](https://spring.io/), so I thought I could use it. Not that I loved using it, but I liked how I could simply put an *annotation* above a method to specify the HTTP method used, like in, say *Flask* or *Express.js*. 
 For example, let's say we have a Controller class that handles one route:
 
 ```java
@@ -54,7 +55,7 @@ You define a function that returns a string formatted with the name and age pass
 I always have loved the Rust ecosystem and community. Everything is *Open Source*, everyone is willing to help you with any trouble you're having and everything is **very well documented**. But learning it is somewhat difficult. Every person I've known that is using Rust have dropped it at least 2 o 3 times before trying to learn it again. And that happened to me... at least 4 times. So I guess **Rocket** is an excuse to give Rust another try. :)
 
 Starting wasn't difficult. Rocket's official tutorial covers up the basics to get you up and running building stuff. Then it's about adding more and more stuff in top of that stuff. Basically stuff of stuff. 
-One of the first things I wanted to get working was the ability to enter a url like **/post/<id>** and see a post coming up in the page. At first glance, I thought I could write the post and then manually convert it to HTML to let Rocket render it. Not difficult, but that sure gets tedious after doing so 300 times. Just when I was about to make a simple tool to let me put Markdown into an HTML template, I found **Tera**, a templating engine for Rust, based on the **Jinja2/Django** templating.
+One of the first things I wanted to get working was the ability to enter a url like **/post/<id>** and see a post coming up in the page. At first glance, I thought I could write the post and then manually convert it to HTML to let Rocket render it. Not difficult, but that sure gets tedious after doing so 300 times. Just when I was about to make a simple tool to let me put Markdown into an HTML template, I found [**Tera**](https://github.com/Keats/tera), a templating engine for Rust, based on the **Jinja2/Django** templating.
 
 Let's imagine you have a way to store Posts:
 
@@ -117,7 +118,7 @@ For example, here's what I kind of use to render the links in the **Related** se
 </ul>
 ```
 
-This approach lets me focus more on the actual writing of the posts rather than manually converting and fixing stuff between each one. Combine that with a CommonMark to HTML converter like **pulldown_cmark** and you're done, just write *.md* files and let the API handle everything for you.
+This approach lets me focus more on the actual writing of the posts rather than manually converting and fixing stuff between each one. Combine that with a CommonMark to HTML converter like [**pulldown_cmark**](https://crates.io/crates/pulldown-cmark) and you're done, just write *.md* files and let the API handle everything for you.
 
 ## OK, but X does that and even more. Why not use it?
 I really don't know. I just liked how Rocket handle things. Plus I think it's a great way of learn Rust. 

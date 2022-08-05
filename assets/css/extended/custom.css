@@ -1,9 +1,9 @@
-.chroma {
-    background-color: unset;
-}
-
 body {
     font-family: 'Roboto Slab';
+}
+
+.entry-header em {
+    color: #7d5fff;
 }
 
 .post-title,
@@ -25,10 +25,9 @@ body {
 }
 
 .post-content code {
-    /* font-family: 'Roboto Slab'; */
     font-weight: bold;
 }
 
-.emoji {
-    font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+.chroma {
+    background-color: unset;
 }
