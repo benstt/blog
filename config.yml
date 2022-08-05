@@ -8,11 +8,13 @@ buildDrafts: false
 params:
   env: production
   keywords: [Blog]
+  description: I use this blog as a way of documenting everything I learn and build throughout the years, with a focus on experimenting. 
   author: Benjamín García Roqués
   DateFormat: "January 2, 2006"
   defaultTheme: auto
 
   assets:
+    favicon: /cat-favicon2.svg
     disableHLJS: true
 
   ShowBreadCrumbs: true # shows ex: home >> posts
@@ -23,6 +25,10 @@ params:
   comments: true
   showtoc: true
   tocopen: false
+
+  label:
+    icon: /cat-favicon.svg
+    iconHeight: 35
 
   # 'suggest changes' button
   editPost:

@@ -2,6 +2,11 @@ body {
     font-family: 'Roboto Slab';
 }
 
+.dark > .header > .nav > .logo img {
+    /* change the svg color depending on light/dark mode */
+    filter: invert(100%);
+}
+
 .entry-header em {
     color: #7d5fff;
 }
