@@ -1,0 +1,91 @@
+baseURL: https://grbenjamin.github.io/
+languageCode: en-us
+title: placeholder
+theme: "PaperMod"
+
+buildDrafts: false
+
+params:
+  env: production
+  keywords: [Blog]
+  author: Benjamín García Roqués
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+
+  assets:
+    disableHLJS: true
+
+  ShowBreadCrumbs: true # shows ex: home >> posts
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  comments: true
+  showtoc: true
+  tocopen: false
+
+  # 'suggest changes' button
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest changes"
+    appendFilePath: true
+
+  # home page
+  homeInfoParams:
+    Title: "Heya! ʕ•ᴥ•ʔ"
+    Content: This is my blog. Here is where I put random thoughts I have.
+
+  socialIcons:
+      - name: "GitHub"
+        url: "https://github.com/grbenjamin"
+      - name: "LinkedIn"
+        url: "https://www.linkedin.com/in/benjamin-garcia-roques/"
+      - name: "rss"
+        url: "grbenjamin.github.io/index.xml"
+  
+  # searching opts
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+enableInlineShortcodes: true
+enableEmoji: true
+
+menu:
+  # nav bar
+  main:
+    - identifier: snippets
+      name: snippets
+      url: /snippets/ 
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: about
+      url: /about/ 
+      weight: 30
+    - identifier: search
+      name: search
+      url: /search/ 
+      weight: 40
+
+markup:
+  highlight:
+    # noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    # lineNos: true
+    style: dracula
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
