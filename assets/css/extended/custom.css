@@ -1,10 +1,27 @@
+:root {
+    /* --hljs-bg: #ffffff;  */
+    /* --code-fg: #000; */
+    --radius: 0px;
+}
+
 body {
     font-family: 'Roboto Slab';
+}
+
+.header {
+    background-color: var(--theme);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .dark > .header > .nav > .logo img {
     /* change the svg color depending on light/dark mode */
     filter: invert(100%);
+}
+
+#menu li a {
+    font-weight: 500;
 }
 
 .entry-header em {
@@ -33,6 +50,24 @@ body {
     font-weight: bold;
 }
 
-.chroma {
-    background-color: unset;
+.post-content .highlight:not(table) {
+    margin: 20px auto;
+}
+
+.post-content pre code {
+    color: var(--code-fg);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.post-tags {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.post-tags a {
+    border-radius: 5px;
+    font-weight: 500;
 }

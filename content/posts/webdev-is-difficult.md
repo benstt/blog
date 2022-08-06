@@ -21,3 +21,7 @@ Sure, a backend is good to have in your website to handle all the parts of it, b
 [^1]: Well, actually, nobody is rushing me up, but I certainly want to blog as soon as possible. ^.^
 
 Don't get me wrong. Doing that stuff was **100% worth it**, I learned the steps involved in setting up everything from the ground up, to having a *fun* way of writing posts... to having such URLs I wanted (on a whim). In the end, though, that is the purpose of this blog, to have a constant *try-fail-learn* attitude with pretty much every topic I want to learn.
+
+## Considering Hugo
+I'm not a fan of just using pre-made tools for the sake of it without learning how everything works before.
+`todo!()`
