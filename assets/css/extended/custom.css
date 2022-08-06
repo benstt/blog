@@ -71,3 +71,33 @@ body {
     border-radius: 5px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 515px) {
+    .nav {
+        justify-content: center;    
+        padding-top: 18px;
+    }
+
+    .logo a {
+        font-size: 30px;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+    .first-entry,
+    .post-header,
+    .page-header h1 {
+        text-align: center;
+    }
+    
+    .entry-content {
+        text-align: justify;
+    }
+
+    .post-meta,
+    .breadcrumbs {
+        justify-content: center;
+    }
+}
